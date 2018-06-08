@@ -13,21 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: <Your Name> Portfolio
+email: you@email.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A description of you that you would want to see as the summary if an employer
+  searched for your name and this popped up as the first result.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-# Remove Default Theme
-# theme: minima
 plugins:
   - jekyll-feed
 
@@ -42,3 +38,34 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+collections:
+  # Professional Sills will be computer programs, programming languages, tools of
+  # the trade.  For Programmers examples might be Ruby, C#, Git, Docker, etc.
+  # For a consice, elegent display, 5 or 6 entries are recommended.
+  # Skills are to be ranked out of 5.
+  ProfessionalSkills:
+    HTML: 3
+    C#: 4
+    Visual Basic: 4
+    JavaScript: 4
+    Synergex DBL: 5
+
+  # Personal Talents will be aspects of yourself that would translate into any career
+  # field:  Leadership, Critical Thinking, Problem Solving, Tenacity, etc.
+  # For a consice, elegent display, 5 or 6 entries are recommended.
+  # Talents are to be ranked out of 5.
+  PersonalTalents:
+    Leadership: 3
+    Learning: 4
+    Critical Thinking: 5
+    Problem Solving: 5
+
+# Social Media Links
+twitter: you-at-twitter
+facebook: your-facebook-page
+googlePlus: your-googleplus-link
+stackOverflow: your-stackoverflow-profile
+github: your-github-username
+linkedin: your-linkedin-profile-utl
