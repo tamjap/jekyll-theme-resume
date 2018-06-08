@@ -1,0 +1,15 @@
+# Welcome to Jekyll!
+#
+# Production-Specific build settings
+# These settings are ones that you only want to be used when compiling for the production
+# environment.  Use this to enable minified SASS, and to override any other settings added
+# to the standard _config.yml.
+#
+# The syntax to utilize this config file is:
+#   [bundle exec] jekyll serve --config _config.yml, _config_production.yml
+
+#Use minified SASS
+sass:
+  style: compressed
+
+

@@ -24,8 +24,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+plugins: jekyll-feed
+# Do not minify SASS
+sass:
+  style: full
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
