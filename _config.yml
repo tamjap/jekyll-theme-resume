@@ -8,26 +8,77 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Build settings
+markdown: kramdown
+plugins: 
+  - jekyll-feed
+# Do not minify SASS
+sass:
+  style: full
+  sass_dir: ./assets/sass
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: <Your Name> Portfolio
-email: you@email.com
 description: >- # this means to ignore newlines until "baseurl:"
   A description of you that you would want to see as the summary if an employer
   searched for your name and this popped up as the first result.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Color Settings to be used throughout your template
+#   primaryColor is used for the background, and will be the most prominent
+#   secondaryColor will be the color for the font, header and footer background
+#   tertiaryColor will be used to highlight hyperlinks
+primaryColor: '#ffffff'
+secondaryColor: '#2c2d4a'
+tertiaryColor: '#d59409'
 
-# Build settings
-markdown: kramdown
-plugins: jekyll-feed
-# Do not minify SASS
-sass:
-  style: full
+name: John Doe
+jobTitle: Software Simian
+
+collections:
+  # Professional Sills will be computer programs, programming languages, tools of
+  # the trade.  For Programmers examples might be Ruby, C#, Git, Docker, etc.
+  # For a consice, elegent display, 5 or 6 entries are recommended.
+  # Skills are to be ranked out of 5.
+  professionalSkills:
+    HTML: 3
+    C#: 4
+    Visual Basic: 4
+    JavaScript: 4
+    Synergex DBL: 5
+
+  # Personal Talents will be aspects of yourself that would translate into any career
+  # field:  Leadership, Critical Thinking, Problem Solving, Tenacity, etc.
+  # For a consice, elegent display, 5 or 6 entries are recommended.
+  # Talents are to be ranked out of 5.
+  personalTalents:
+    Leadership: 3
+    Learning: 4
+    Critical Thinking: 5
+    Problem Solving: 5
+
+# Contact Information
+email: you@email.com
+phone: (001) 555-5555
+streetAddress: 123 There St
+streetAddress2: Apt 15-B
+city: New York
+state: NY
+zip: 10001
+
+# Social Media Links
+website: www.yoursite.com
+twitter: you-at-twitter
+facebook: your-facebook-page
+googlePlus: your-googleplus-link
+stackOverflow: your-stackoverflow-profile
+github: your-github-username
+linkedin: your-linkedin-profile-utl
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -40,35 +91,3 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
-collections:
-  # Professional Sills will be computer programs, programming languages, tools of
-  # the trade.  For Programmers examples might be Ruby, C#, Git, Docker, etc.
-  # For a consice, elegent display, 5 or 6 entries are recommended.
-  # Skills are to be ranked out of 5.
-  ProfessionalSkills:
-    HTML: 3
-    C#: 4
-    Visual Basic: 4
-    JavaScript: 4
-    Synergex DBL: 5
-
-  # Personal Talents will be aspects of yourself that would translate into any career
-  # field:  Leadership, Critical Thinking, Problem Solving, Tenacity, etc.
-  # For a consice, elegent display, 5 or 6 entries are recommended.
-  # Talents are to be ranked out of 5.
-  PersonalTalents:
-    Leadership: 3
-    Learning: 4
-    Critical Thinking: 5
-    Problem Solving: 5
-
-# Social Media Links
-website: www.yoursite.com
-twitter: you-at-twitter
-facebook: your-facebook-page
-googlePlus: your-googleplus-link
-stackOverflow: your-stackoverflow-profile
-github: your-github-username
-linkedin: your-linkedin-profile-utl
