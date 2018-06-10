@@ -13,7 +13,8 @@
 .title {
     margin: auto;
     text-align: center;
-    max-width: 20%;
+    width: 20%;
+    min-width: 200px;
     display: block;
     border: solid;
     border-color: $primaryColor;
