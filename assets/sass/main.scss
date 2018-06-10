@@ -1,0 +1,29 @@
+---
+---
+@import 'normalize';
+@import 'variables';
+
+.header {
+    overflow: hidden;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    padding: 60px;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    max-width: 20%;
+    display: block;
+    border: solid;
+    border-color: $primaryColor;
+    border-width: thin thick thin thick;
+    hr {
+        width: 30%;
+    }
+}
+body {
+    background: $primaryColor;
+    color: $secondaryColor;
+}
+
