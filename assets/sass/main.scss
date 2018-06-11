@@ -1,7 +1,14 @@
 ---
 ---
+/*  Variables */
+
+$primaryColor: {{ site.data.theme[site.data.theme.selectedTheme].primaryColor }} !default;
+$secondaryColor: {{ site.data.theme[site.data.theme.selectedTheme].secondaryColor }} !default;
+$tertiaryColor: {{ site.data.theme[site.data.theme.selectedTheme].tertiaryColor }} !default;
+$uncheckedRadio: {{ site.data.theme[site.data.theme.selectedTheme].uncheckedRadio }};
+$checkedRadio: {{ site.data.theme[site.data.theme.selectedTheme].checkedRadio }};
+
 @import 'normalize';
-@import 'variables';
 
 @import 'header';
 

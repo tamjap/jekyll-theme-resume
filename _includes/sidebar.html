@@ -1,14 +1,30 @@
+{% assign previousSection = false %}
 <div class="sidebar">
-    {% if site.data.professionalSkills!=null %}
+    {% if site.data.professionalSkills != null and site.data.professionalSkills != false %}
+        {% assign previousSection = true %}
         <div class="skillTalent">
             <h2>Professional Skills</h2>
                 {% include skillTalent.html data=site.data.professionalSkills %}
         </div>
     {% endif %}
-    {% if site.data.personalTalents!=null %}
+    {% if site.data.personalTalents != null and site.data.personalTalents != false %}
+        {% if previousSection == true %}
+            <hr />
+        {% endif %}
+        {% assign previousSection = true %}
         <div class="skillTalent">
             <h2>Personal Talents</h2>
                 {% include skillTalent.html data=site.data.personalTalents %}
+        </div>
+    {% endif %}
+    {% if site.data.spokenLanguages != null and site.data.spokenLanguages != false %}
+        {% if previousSection == true %}
+            <hr />
+        {% endif %}
+        {% assign previousSection = true %}
+        <div class="skillTalent">
+            <h2>Spoken Languages</h2>
+                {% include skillTalent.html data=site.data.spokenLanguages %}
         </div>
     {% endif %}
 </div>

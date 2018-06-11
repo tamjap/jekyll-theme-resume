@@ -1,21 +1,36 @@
 .sidebar {
+    top: 0;
     height: 100%;
     width: 20%;
     max-width: 250px;
     z-index: 1;
-    border-right: thin solid $secondaryColor;
+    border-right: medium solid $secondaryColor;
     text-align: center;
+    margin: 0;
+    padding: 0;
+/*    h2 {
+        text-decoration: underline;
+    }*/
+    hr {
+        border-color: $secondaryColor;
+        opacity: 0.5;
+        width: 50%;
+    }
     .entry {
-        padding: 5px 20px;
+        text-decoration: none;
+        padding: 10px 20px;
         text-align: right;
         .name {
-            padding-bottom: 0px;
+            h4 {
+                margin: 0;
+            }
         }
         .rating {
             padding-top: 0px;
             img {
                 height:20px;
                 width: 20px;
+                padding-left: 5px;
             }
         }
     }

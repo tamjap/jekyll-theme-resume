@@ -1,0 +1,59 @@
+selectedTheme: Green
+
+Black:
+  primaryColor: "#222222"
+  secondaryColor: "#ffffff"
+  tertiaryColor: "#999999"
+  uncheckedRadio: "/assets/images/BlackRadio"
+  checkedRadio: "/assets/images/GrayRadio"
+  lighten: true
+  
+Blue:
+  primaryColor: "#ffffff"
+  secondaryColor: "#060b39"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/GrayRadio"
+  checkedRadio: "/assets/images/BlueRadio"
+  lighten: true
+
+Brick:
+  primaryColor: "#ffffff"
+  secondaryColor: "#64090f"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/GrayRadio"
+  checkedRadio: "/assets/images/BrickRadio"
+  lighten: false
+
+Green:
+  primaryColor: "#f5fff5"
+  secondaryColor: "#426d51"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/GrayRadio"
+  checkedRadio: "/assets/images/GreenRadio"
+  lighten: false
+
+Halloween:
+  primaryColor: "#000000"
+  secondaryColor: "#f89201"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/BlackRadio"
+  checkedRadio: "/assets/images/OrangeRadio"
+  lighten: false
+
+Orange:
+  primaryColor: "#ffffff"
+  secondaryColor: "#f89201"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/GrayRadio"
+  checkedRadio: "/assets/images/OrangeRadio"
+  lighten: false
+ 
+
+Purple:
+  primaryColor: "#ffffff"
+  secondaryColor: "#480572"
+  tertiaryColor: "#b98513"
+  uncheckedRadio: "/assets/images/GrayRadio"
+  checkedRadio: "/assets/images/PurpleRadio"
+  lighten: false
+  

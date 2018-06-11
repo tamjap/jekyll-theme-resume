@@ -6,15 +6,16 @@
     {% assign UnChecked = 5 | minus: item[1] %}
     <div class="entry">
         <div class="name">
-            <h3>{{ Name }}</h3>
+            <h4>{{ Name }}</h4>
         </div>
         <div class="rating">
             {% for i in (1..UnChecked) %}
-                <img src="/assets/images/unCheckedRadio.png" />
+                <img src={{ site.data.theme[site.data.theme.selectedTheme].uncheckedRadio | append: ".png" }} />
             {% endfor %}
             {% for i in (1..Rating) %}
-                <img src="/assets/images/CheckedRadio.png" />
+            <img src={{ site.data.theme[site.data.theme.selectedTheme].checkedRadio | append: ".png" }} />
             {% endfor %}
+            <p>{{ site.checkedRadio }}</p>
         </div>
 
     </div>

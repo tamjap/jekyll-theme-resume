@@ -29,52 +29,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# Color Settings to be used throughout your template
-#   primaryColor is used for the background, and will be the most prominent
-#   secondaryColor will be the color for the font, header and footer background
-#   tertiaryColor will be used to highlight hyperlinks
-primaryColor: '#ffffff'
-secondaryColor: '#2c2d4a'
-tertiaryColor: '#d59409'
 
 name: John Doe
 jobTitle: Software Simian
-
-collections:
-  # Professional Sills will be computer programs, programming languages, tools of
-  # the trade.  For Programmers examples might be Ruby, C#, Git, Docker, etc.
-  # For a consice, elegent display, 5 or 6 entries are recommended.
-  # Skills are to be ranked out of 5.
-  professionalSkills:
-    Skill:
-      Name: HTML
-      Rating: 3
-
-    Skill:
-      Name: C#
-      Rating: 4
-
-    Skill:
-      Name: Visual Basic
-      Rating: 4
-
-    Skill:
-      Name: JavaScript
-      Rating: 4
-
-    Skill:
-      Name: Synergex DBL
-      Rating: 5
-
-  # Personal Talents will be aspects of yourself that would translate into any career
-  # field:  Leadership, Critical Thinking, Problem Solving, Tenacity, etc.
-  # For a consice, elegent display, 5 or 6 entries are recommended.
-  # Talents are to be ranked out of 5.
-  personalTalents:
-    Leadership: 3
-    Learning: 4
-    Critical Thinking: 5
-    Problem Solving: 5
 
 # Contact Information
 email: you@email.com
