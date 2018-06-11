@@ -1,0 +1,14 @@
+<div class="sidebar">
+    {% if site.data.professionalSkills!=null %}
+        <div class="skillTalent">
+            <h2>Professional Skills</h2>
+                {% include skillTalent.html data=site.data.professionalSkills %}
+        </div>
+    {% endif %}
+    {% if site.data.personalTalents!=null %}
+        <div class="skillTalent">
+            <h2>Personal Talents</h2>
+                {% include skillTalent.html data=site.data.personalTalents %}
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,21 @@
+
+
+{% for item in include.data %}
+    {% assign Name = item[0] %}
+    {% assign Rating = item[1] %}
+    {% assign UnChecked = 5 | minus: item[1] %}
+    <div class="entry">
+        <div class="name">
+            <h3>{{ Name }}</h3>
+        </div>
+        <div class="rating">
+            {% for i in (1..UnChecked) %}
+                <img src="/assets/images/unCheckedRadio.png" />
+            {% endfor %}
+            {% for i in (1..Rating) %}
+                <img src="/assets/images/CheckedRadio.png" />
+            {% endfor %}
+        </div>
+
+    </div>
+{% endfor %}

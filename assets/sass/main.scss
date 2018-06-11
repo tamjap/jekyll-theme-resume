@@ -3,28 +3,13 @@
 @import 'normalize';
 @import 'variables';
 
-.header {
-    overflow: hidden;
-    background-color: $secondaryColor;
-    color: $primaryColor;
-    padding: 60px;
-}
+@import 'header';
 
-.title {
-    margin: auto;
-    text-align: center;
-    width: 20%;
-    min-width: 200px;
-    display: block;
-    border: solid;
-    border-color: $primaryColor;
-    border-width: thin thick thin thick;
-    hr {
-        width: 30%;
-    }
-}
+@import 'sidebar';
+
 body {
     background: $primaryColor;
     color: $secondaryColor;
+    overflow: scroll
 }
 

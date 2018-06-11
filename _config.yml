@@ -46,11 +46,25 @@ collections:
   # For a consice, elegent display, 5 or 6 entries are recommended.
   # Skills are to be ranked out of 5.
   professionalSkills:
-    HTML: 3
-    C#: 4
-    Visual Basic: 4
-    JavaScript: 4
-    Synergex DBL: 5
+    Skill:
+      Name: HTML
+      Rating: 3
+
+    Skill:
+      Name: C#
+      Rating: 4
+
+    Skill:
+      Name: Visual Basic
+      Rating: 4
+
+    Skill:
+      Name: JavaScript
+      Rating: 4
+
+    Skill:
+      Name: Synergex DBL
+      Rating: 5
 
   # Personal Talents will be aspects of yourself that would translate into any career
   # field:  Leadership, Critical Thinking, Problem Solving, Tenacity, etc.
