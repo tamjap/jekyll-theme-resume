@@ -14,6 +14,8 @@ $checkedRadio: {{ site.data.theme[site.data.theme.selectedTheme].checkedRadio }}
 
 @import 'sidebar';
 
+@import 'content';
+
 body {
     background: $primaryColor;
     color: $secondaryColor;

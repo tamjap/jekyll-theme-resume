@@ -1,7 +1,7 @@
-selectedTheme: Green
+selectedTheme: Blue
 
 Black:
-  primaryColor: "#222222"
+  primaryColor: "#000000"
   secondaryColor: "#ffffff"
   tertiaryColor: "#999999"
   uncheckedRadio: "/assets/images/BlackRadio"

@@ -1,21 +1,23 @@
+$titleBorderWidth: 70;
+$titlePadding: 70;
+
 .header {
     overflow: hidden;
     background-color: $secondaryColor;
     color: $primaryColor;
     padding: 60px;
-}
-
-.title {
-    margin: auto;
-    text-align: center;
-    width: 20%;
-    min-width: 200px;
-    display: block;
-    border: solid;
-    border-color: $primaryColor;
-    border-width: thin thick thin thick;
-    hr {
-        width: 30%;
-        border-color: $primaryColor;
+    .title {
+        text-align: center;
+        margin: auto;
+        width: 20%;
+        min-width: 200px;
+        display: block;
+        border-style: solid;
+        border-width: thin 0;
+        hr {
+            width: 30%;
+            border-color: $primaryColor;
+        }
     }
 }
+

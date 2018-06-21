@@ -9,13 +9,14 @@
             <h4>{{ Name }}</h4>
         </div>
         <div class="rating">
-            {% for i in (1..UnChecked) %}
-                <img src={{ site.data.theme[site.data.theme.selectedTheme].uncheckedRadio | append: ".png" }} />
-            {% endfor %}
-            {% for i in (1..Rating) %}
-            <img src={{ site.data.theme[site.data.theme.selectedTheme].checkedRadio | append: ".png" }} />
-            {% endfor %}
-            <p>{{ site.checkedRadio }}</p>
+            <ul>
+                {% for i in (1..UnChecked) %}
+                    <li><img src={{ site.data.theme[site.data.theme.selectedTheme].uncheckedRadio | append: ".png" }} /></li>
+                {% endfor %}
+                {% for i in (1..Rating) %}
+                    <li><img src={{ site.data.theme[site.data.theme.selectedTheme].checkedRadio | append: ".png" }} /></li>
+                {% endfor %}
+            </ul>
         </div>
 
     </div>
