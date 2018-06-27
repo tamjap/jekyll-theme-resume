@@ -1,0 +1,38 @@
+<div class="education">
+        <hr class="hideable" />
+        <div class="hideSection">
+                <h1 onclick="collapse(this, '.education', '.entry')">-</h1>
+            </div>
+        <div class="title">
+                <h2>Education</h2>
+        </div>
+    
+        {% for post in site.categories.education %}
+            <div class="entry">
+                <div class="institution">
+                    <div class="name">
+                        <h3>{{ post.school | upcase}}</h3>
+                    </div>
+                    <div class="address">
+                        <h3>{{ post.address }}</h3>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="rollDate">
+                    <div class="roll">
+                        <h4>{{ post.degree }} in {{ post.major }}</h4>
+                    </div>
+                    <br class="hideable" />
+                    <div class="date">
+                        <h4>{{ post.graduationDate | date: "%B, %Y" }}</h4>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="detail">
+                    <p>{{ post.content }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    
+    </div>
+    

@@ -7,13 +7,10 @@
         padding-right: 20px;
         width: 100%;
     }
-    .experience {
+    .experience, .education {
         width: 100%;
         @media only screen and (max-width: 1300px) {
             text-align: center;
-            hr {
-                
-            }
         }
         .entry {
             text-align: left;
