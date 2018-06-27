@@ -1,0 +1,37 @@
+<div class="experience">
+    <hr class="hideable" />
+    <div class="hideSection">
+            <h1 onclick="collapse(this, '.experience', '.entry')">-</h1>
+        </div>
+    <div class="title">
+            <h2>Experience</h2>
+    </div>
+
+    {% for post in site.categories.experience %}
+        <div class="entry">
+            <div class="institution">
+                <div class="name">
+                    <h3>{{ post.company | upcase}}</h3>
+                </div>
+                <div class="address">
+                    <h3>{{ post.address }}</h3>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="rollDate">
+                <div class="roll">
+                    <h4>{{ post.title }}</h4>
+                </div>
+                <br class="hideable" />
+                <div class="date">
+                    <h4>{{ post.start | date: "%B, %Y" }} - {{ post.end | date: "%B, %Y" }}</h4>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="detail">
+                <p>{{ post.content }}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

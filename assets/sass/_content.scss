@@ -1,0 +1,62 @@
+.content {
+    margin: auto 20px;
+    display: inline-block;
+    width: 75%;
+    @media only screen and (max-width: 1300px) {
+        margin: auto;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+        @media only screen and (max-width: 1300px) {
+            text-align: center;
+            hr {
+                
+            }
+        }
+        .entry {
+            text-align: left;
+            padding-left: 50px;
+            @media screen and (max-width: 1300px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .institution {
+                margin-bottom: 0;
+                width: 100%;
+                h3 {
+                    margin-bottom: 3px;
+                }
+                .name {
+                    float: left;
+                }
+                .address {
+                    float: right;
+                }
+            }
+            .rollDate {
+                h4 {
+                    margin: 0 auto;
+                    font-style: italic;
+                }
+                .roll {
+                    float: left;
+                }
+                .date {
+                    float: right;
+                    @media only screen and (max-width: 1300px) {
+                        float: left;
+                    }
+                }
+            }
+            .detail {
+                margin: auto;
+                width: 85%;
+                p {
+                    margin-top: 0;
+                }
+            }
+        }    
+    }
+}
