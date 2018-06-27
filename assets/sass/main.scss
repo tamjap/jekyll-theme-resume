@@ -19,6 +19,32 @@ $checkedRadio: {{ site.data.theme[site.data.theme.selectedTheme].checkedRadio }}
 body {
     background: $primaryColor;
     color: $secondaryColor;
-    overflow: scroll
+    overflow: scroll;
+    hr {
+        border-color: $secondaryColor;
+        opacity: 0.5;
+        width: 50%;
+        margin-left: auto;
+    }
+    .hideable {
+        display: none;
+        @media only screen and (max-width: 1300px) {
+            display: block;
+        }
+    }
+    .hideSection {
+        h1 {
+            padding: 0 30px;
+            margin: 0;
+            cursor: pointer;
+            float: right;
+            display: none;
+        }
+        h1 {
+            @media only screen and (max-width: 1300px) {
+                display: inline-block;
+            }
+        }
+    }
 }
 
