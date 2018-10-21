@@ -12,6 +12,8 @@
 markdown: kramdown
 plugins: 
   - jekyll-feed
+minPageWidth:  1100
+
 # Do not minify SASS
 sass:
   style: full
@@ -22,34 +24,34 @@ sass:
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: <Your Name> Portfolio
+title: <name> Portfolio
 description: >- # this means to ignore newlines until "baseurl:"
-  A description of you that you would want to see as the summary if an employer
-  searched for your name and this popped up as the first result.
+  Put text here that you would like to have displayed when your page is retrieved
+  via surch engines.
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 name: John Doe
-jobTitle: Software Simian
+jobTitle: Software Semian
 
 # Contact Information
-email: you@email.com
-phone: (001) 555-5555
-streetAddress: 123 There St
-streetAddress2: Apt 15-B
+email: your@email.com
+phone: (555) 555-5555
+streetAddress: 123 Second Street
+streetAddress2: Apt 13B
 city: New York
 state: NY
 zip: 10001
 
 # Social Media Links
-website: www.yoursite.com
-twitter: you-at-twitter
-facebook: your-facebook-page
-googlePlus: your-googleplus-link
-stackOverflow: your-stackoverflow-profile
-github: your-github-username
-linkedin: your-linkedin-profile-utl
+portfolio: http://www.yourPortfolio.com
+github: http://www.github.com/yourUsername
+stackOverflow: http://stackoverflow.com/u//yourUserName
+linkedin: http://www.linkedin.com/in/yourName
+twitter:
+facebook:
+googlePlus:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

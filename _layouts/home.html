@@ -9,16 +9,19 @@
 
 	<body>
         {% include header.html %}
+        {% include menu.html %}
         <div class="sidebar">
             {% include sidebar.html %}
         </div>
         <div class="content">
+            <hr class="hideable" />
             {% include experience.html %}
-            <hr />
+            <hr class="hideable" />
             {% include education.html %}
         </div>
     </body>
 
     <script type="text/javascript" src="/assets/js/collapseBlock.js" ></script>
-    
+    <script type="text/javascript" src="/assets/js/print.js" ></script>
+    <script type="text/javascript" src="/assets/js/jspdf.min.js" ></script>
 </html>

@@ -7,15 +7,24 @@ $secondaryColor: {{ site.data.theme[site.data.theme.selectedTheme].secondaryColo
 $tertiaryColor: {{ site.data.theme[site.data.theme.selectedTheme].tertiaryColor }} !default;
 $uncheckedRadio: {{ site.data.theme[site.data.theme.selectedTheme].uncheckedRadio }};
 $checkedRadio: {{ site.data.theme[site.data.theme.selectedTheme].checkedRadio }};
+$maxWidth: {{ site.minPageWidth }}px;
 
 @import 'normalize';
 
 @import 'header';
 
+@import 'menu';
+
 @import 'sidebar';
 
 @import 'content';
 
+a {
+    color: $secondaryColor;
+}
+h2 { 
+    margin: 0;
+}
 body {
     background: $primaryColor;
     color: $secondaryColor;
@@ -28,7 +37,7 @@ body {
     }
     .hideable {
         display: none;
-        @media only screen and (max-width: 1300px) {
+        @media only screen and (max-width: $maxWidth) {
             display: block;
         }
     }
@@ -41,8 +50,15 @@ body {
             display: none;
         }
         h1 {
-            @media only screen and (max-width: 1300px) {
+            @media only screen and (max-width: $maxWidth) {
                 display: inline-block;
+            }
+        }
+        h2 {
+            padding: 0 30px;
+            margin: 0;
+            @media only screen and (max-width: $maxWidth) {
+                padding-left: 30px;
             }
         }
     }

@@ -1,16 +1,16 @@
 ---
 layout: experience
-start: 2005-01-01
-end: Present
-title: Chief Underling
+start: 2003-03-03
+end: 2005-01-01
+title: Software Developer
 company: AutoComp
 [comment]: <> (City, State of the company)
 address: Tallahasee, FL
 ---
-
-Evaluate customer requests for viability and resource requirements.  Design and implement web-based software solutions to satisfiy customer needs.
+Evaluate customer requests for viability and resource requirements. Design and implement web-based software solutions to satisfiy customer needs.
 
 Achievements:
 <ul>
     <li>Implemented unit testing harness to improve code reliability and decrease feature turnaround time</li>
     <li>Increased income from custom work by 7% through effective use of suggestive selling in product descriptions</li>
+</ul>

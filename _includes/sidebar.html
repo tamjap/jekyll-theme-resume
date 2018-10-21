@@ -12,10 +12,9 @@
 </div>
 {% if site.data.professionalSkills != null and site.data.professionalSkills != false %}
     {% assign previousSection = true %}
-    <hr />
     <div class="skillTalent">
         <div class="hideSection">
-            <h1 onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
+            <h1 id="ProfessionalSkills" onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
         </div>
         <div>
             <h2>Professional Skills</h2>
@@ -32,7 +31,7 @@
     {% assign previousSection = true %}
     <div class="skillTalent">
         <div class="hideSection">
-            <h1 onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
+            <h1 id="PersonalTalents" onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
         </div>
         <div>
             <h2>Personal Talents</h2>
@@ -49,7 +48,7 @@
     {% assign previousSection = true %}
     <div class="skillTalent">
         <div class="hideSection">
-            <h1 onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
+            <h1 id="SpokenLanguages" onclick="collapse(this, '.skillTalent', '.ulGroup')">+</h1>
         </div>
         <div>
             <h2>Spoken Languages</h2>

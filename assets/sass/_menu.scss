@@ -1,0 +1,27 @@
+.menu {
+    padding: 20px;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    overflow: hidden;
+    a {
+        color: $primaryColor;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    ul {
+        margin: 0;
+        margin-right: 10px;
+        vertical-align: top;
+        float: right;
+    }
+    li {
+        cursor: pointer;
+        display: inline-block;
+        list-style: none;
+        padding-left: 10px;
+        opacity: 0.5;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
